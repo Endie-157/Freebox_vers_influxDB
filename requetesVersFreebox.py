@@ -21,7 +21,7 @@ write_api = client.write_api(write_options=SYNCHRONOUS)
 freeboxUrl="http://mafreebox.freebox.fr" #addresse par défaut de la freebox
 rrd=freeboxUrl+"/api/v12/rrd/"
 freeboxToken="" #token obtenu dans authrep.json
-freeboxAppId="" #nom de l'application que vous avez noté dans authreq
+freeboxAppId="" #ID de l'application que vous avez noté dans authreq
 
 #Création du mot de passe avec un challenge
 rep=requests.get(freeboxUrl+"/api/v12/login/")
