@@ -1,0 +1,6 @@
+{
+    "app_id": "ID de votre application",
+    "app_name": "Nom de l'application",
+    "app_version": "version",
+    "device_name": "Nom de l'ordinateur qui execute le code"
+ }
