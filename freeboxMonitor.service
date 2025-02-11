@@ -1,0 +1,21 @@
+[Unit]
+# script python pour recevoir des statistiques de la freebox vers influxdb
+Description=Pyhton freebox vers influxdb
+After=syslog.target
+
+[Service]
+Type=simple
+
+# remplacer avec le dossier contenant le script, chemin absolu
+WorkingDirectory=/directory/vers/script
+
+# remplacer avec l'emplacement du script python, chemin absolu
+ExecStart=/usr/bin/python3 /directory/vers/script/freebox.py
+
+Restart=on-failure
+
+StandardOutput=syslog
+StandardError=syslog
+
+[Install]
+WantedBy=multi-user.target
