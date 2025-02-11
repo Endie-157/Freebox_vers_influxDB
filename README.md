@@ -25,3 +25,13 @@ Dans le fichier authrep.json qui sera créé vous trouverez votre token et un id
 Ensuite vous devez éditer requetesVersFreebox.py et rentrer vos informations influxDB et freebox dans les champs en haut.
 
 Enfin il ne vous reste plus qu'à lancer le script et tout devrais être envoyé à influxDB, avec possibilité de renvoyer vers Grafana. 
+
+---
+
+## Pour démarrer le script automatiquement:
+
+Prendre le fichier freeboxMonitor.service et le placer dans /etc/systemd/system/
+
+Puis  exécuter la commande:
+
+```sudo systemctl enable --now freeboxMonitor.service```
